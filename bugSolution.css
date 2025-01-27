@@ -1,0 +1,16 @@
+/* bugSolution.css */
+
+/* Instead of using @apply within the layer, define the styles directly or use a different strategy */
+@layer components {
+  .my-component {
+    /* Directly apply Tailwind classes here */
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Or, if you must use @apply, try applying directly to the component without the @layer */
+.my-component {
+    @apply p-4 bg-gray-100 border border-gray-300;
+}
